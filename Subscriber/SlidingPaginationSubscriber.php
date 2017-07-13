@@ -21,9 +21,9 @@ class SlidingPaginationSubscriber implements EventSubscriberInterface
 
     public function onKernelRequest(GetResponseEvent $event)
     {
-        if (HttpKernelInterface::MASTER_REQUEST !== $event->getRequestType()) {
-            return;
-        }
+//         if (HttpKernelInterface::MASTER_REQUEST !== $event->getRequestType()) {
+//             return;
+//         }
 
         $request = $event->getRequest();
 
